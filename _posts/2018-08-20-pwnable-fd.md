@@ -19,4 +19,7 @@ This is my first post. So it may be a poor article, but please understand.
 
 ![problem](/assets/img/pwn/fd/problem.PNG)
 
-To the point, fd problem is
+
+To the point, first we can see the ssh command, host name, port number and password. I use Window bash to connect. Once connected, you will see the following screen :)
+
+![problem](/assets/img/pwn/fd/intro.PNG)
