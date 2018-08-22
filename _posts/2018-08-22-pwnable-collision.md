@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pwnable.kr - 1. collision"
+title: "Pwnable.kr - 2. collision"
 date: 2018-08-22 10:34:00
 image: '/assets/img/pwn/collision.png'
 description: pwnable.kr - collision problem solving

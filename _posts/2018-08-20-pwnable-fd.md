@@ -13,4 +13,8 @@ introduction: pwnable.kr - fd problem solving, it is a simple summary that i sol
 ---
 
 
-### NOPE
+## File Descriptor problem
+
+This is my first post. So it may be a poor article, but please understand.
+
+To the point, in 
