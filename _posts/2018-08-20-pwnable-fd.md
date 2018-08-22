@@ -17,6 +17,6 @@ introduction: pwnable.kr - fd problem solving, it is a simple summary that i sol
 
 This is my first post. So it may be a poor article, but please understand.
 
-![problem](/assets/img/pwn/fd/problem.png)
+![problem](/assets/img/pwn/fd/problem.PNG)
 
 To the point, fd problem is
