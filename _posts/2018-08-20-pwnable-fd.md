@@ -59,4 +59,4 @@ int main(int argc, char* argv[], char* envp[]){
 
 
 
-If buf value is "LETMEWIN\n", system function works and show flag by execute '/bin/cat'.
+If __buf__ value is "LETMEWIN\n", system function works and show flag by execute '/bin/cat'. So we can use file descriptor. because buf value is read value from fd. So if fd is STDIN, we enter value for __buf__. We pass the argument to fd program. And file descriptor 0 is STDIN. If we pass 0x1234, fd value is zero. Then we can enter value that execute system function. 
