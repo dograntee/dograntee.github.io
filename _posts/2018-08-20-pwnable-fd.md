@@ -15,7 +15,7 @@ introduction: pwnable.kr - fd problem solving, it is a simple summary that i sol
 
 ## File Descriptor problem
 
-This is my first post. So it may be a poor article, but please understand.
+This is my first post. So even if it's not enough, please understand.
 
 ![problem](/assets/img/pwn/fd/problem.PNG)
 
