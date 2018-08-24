@@ -56,3 +56,6 @@ int main(int argc, char* argv[], char* envp[]){
 
 }
 ~~~
+
+
+If buf value is "LETMEWIN\n", system function works and show flag by execute '/bin/cat'.
