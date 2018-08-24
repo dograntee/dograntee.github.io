@@ -50,4 +50,15 @@ int main(int argc, char* argv[]){
 }
 ~~~
 
-If check_password function return 0x21DD09EC, system call execute and show flag 
+If check_password function return value 0x21DD09EC, system call execute and show flag.
+
+check_password function add 5 times to __res__ value, increasing the address value by 4 bytes(becaues ip point has int data type).
+
+So we list five variables in 4 bytes and sum of variables should be 0x21DD09EC.
+
+If we divide 0x21DD09EC by five is 0x6C5CEC8. The rest is 4, so adding 0x6C5CEC8 4 times and 0x6C5CECC(0x6C5CEC8 + 4) once and we get 0x21DD09EC.
+
+And We pass the list to the col. We can solve the problem.
+
+
+![problem](/assets/img/pwn/col/answer.PNG)
