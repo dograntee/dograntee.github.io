@@ -48,4 +48,33 @@ int main(int argc, char* argv[]){
 }
 ~~~
  
-In the source code, there is char array named overflowme. The namimg of array is related to solution of this problem. And line 7, __gets__ function 
+In the source code, there is char array named overflowme. In guessing, the namimg of array is related to solution of this problem. And next, line 7, __gets__ function receive user input and store at char array __"overflowme"__. but __gets__ function have weak point can be receive too much amount of data rather than allocated data size. So we can input data bigger that 32 byte and more, it can be overflowed.
+
+What we can do by overflowing __"overflowme"__. For understanding this wokring, we need to know that local variable is located at stack field and how composed stack frame is.
+
+In the stack section, there is some subsection. See the picture below.
+
+![problem](/assets/img/pwn/bof/stack_frame.PNG "stack frame")
+
+Detailed explanation is folded, we can notice that local variables are located at stack section and stored under __Save old frame pointer field(RBP)__ and __Return address to the caller__, __Function arguments__. So if we enter over 32 byte, input data is stored over local variable storage section and modify __"Function Arguments filed"__. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###-1. Reference
+ - The Linux Programming Interface by Michael Kerrisk
+ - https://loonytek.com/2015/04/28/call-stack-internals-part-1/ by siddharthteotia
