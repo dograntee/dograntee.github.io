@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Pwnable.kr - 3. bof"
-date: 2018-08-23 12:00:00
-image: '/assets/img/pwn/bof.png'
+title: "Pwnable.kr - 4. flag"
+date: 2018-09-10 16:38:00
+image: '/assets/img/pwn/flag.png'
 description: pwnable.kr - bof problem solving
 category: 'pwnable'
 tags:
