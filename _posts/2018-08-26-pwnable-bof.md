@@ -13,9 +13,9 @@ introduction: pwnable.kr - bof problem solving, it is a simple summary that i so
 ---
 
 
-# BOF problem#
+# BOF problem
 
-###0. Intro###
+###0. Intro
 
 bof stands for "buffer overflow". So this problem may be using buffer overflow vulnerability. 
 
@@ -23,7 +23,7 @@ What is buffer overflow? buffer overflow can be divided into two big section. On
 (* Stack and Heap is a field of running process structure in memory)
 ![problem](/assets/img/pwn/bof/process_structure.PNG "process structure")
 
-###1. Analyze###
+###1. Analyze
 
 First, look at the source code bof.c
 
@@ -58,7 +58,7 @@ In the stack section, there is some subsection. See the picture below.
 
 Detailed explanation is folded, we can notice that local variables are located at stack section and stored under __Save old frame pointer field(RBP)__ and __Return address to the caller__, __Function arguments__. So if we enter over 32 byte, input data is stored over local variable storage section and modify __"Function Arguments filed"__. 
 
-###2. Solution###
+###2. Solution
 
 We know that we enter proper input, we can modify function argument. So we modify __"key"__  
 
