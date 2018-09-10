@@ -23,7 +23,7 @@ What is buffer overflow? buffer overflow can be divided into two big section. On
 ( * Stack and Heap is a field of running process structure in memory)
 
 ![problem](/assets/img/pwn/bof/process_structure.PNG "process structure")
-###### <center> <Fig. process structure> </center>
+###### <center> (Fig. process structure) </center>
 
 ## 01xAnalyze
 
@@ -58,7 +58,7 @@ What we can do by overflowing __"overflowme"__. For understanding this wokring, 
 In the stack section, there is some subsection. See the picture below.
 
 ![problem](/assets/img/pwn/bof/stack_frame.PNG "stack frame")
-###### <center> <Fig. stack frame> </center>
+###### <center> (Fig. stack frame) </center>
 
 Detailed explanation is folded, we can notice that local variables are located at stack section and stored under __Save old frame pointer field(RBP)__ and __Return address to the caller__, __Function arguments__. So if we enter over 32 byte, input data is stored over local variable storage section and modify __"Function Arguments filed"__. 
 
@@ -69,10 +69,10 @@ We know that we enter proper input, we can modify function argument. Through we 
 Look at the bof assembly. 
 
 ![problem](/assets/img/pwn/bof/bof_assembly.PNG "bof main assembly")
-###### <center> <Fig. bof.c main assembly> </center>
+###### <center> (Fig. bof.c main assembly) </center>
 
 ![problem](/assets/img/pwn/bof/bof_func_assembly.PNG "bof func assembly")
-###### <center> <Fig. bof.c func assembly<> </center>
+###### <center> (Fig. bof.c func assembly) </center>
 
 
 
