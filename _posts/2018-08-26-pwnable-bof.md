@@ -49,7 +49,7 @@ int main(int argc, char* argv[]){
 	return 0;
 }
 ~~~
- 
+###### <center> (Fig. bof.c source code) </center>
 
 In the source code, there is char array named overflowme. In guessing, the namimg of array is related to solution of this problem. And next, line 7, __gets__ function receive user input and store at char array __"overflowme"__. but __gets__ function have weak point can be receive too much amount of data rather than allocated data size. So we can input data bigger that 32 byte and more, it can be overflowed.
 
