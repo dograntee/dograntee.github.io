@@ -7,7 +7,7 @@ description: pwnable.kr - collision problem solving
 category: 'pwnable'
 tags:
 - pwnable
-- Litte math
+- Little math
 twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: pwnable.kr - collision problem solving, it is a simple summary that i solve the collsion problem to study pwnable 
 ---
