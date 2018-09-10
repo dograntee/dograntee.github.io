@@ -20,7 +20,8 @@ introduction: pwnable.kr - bof problem solving, it is a simple summary that i so
 bof stands for "buffer overflow". So this problem may be using buffer overflow vulnerability. 
 
 What is buffer overflow? buffer overflow can be divided into two big section. One is BOF in *stack section, and the other is *heap section overflow. This problem is about stack BOF, describing the reason later
-(* Stack and Heap is a field of running process structure in memory)
+( * Stack and Heap is a field of running process structure in memory)
+
 ![problem](/assets/img/pwn/bof/process_structure.PNG "process structure")
 <center>process structure</center>
 
@@ -49,7 +50,7 @@ int main(int argc, char* argv[]){
 }
 ~~~
  
- 
+
 In the source code, there is char array named overflowme. In guessing, the namimg of array is related to solution of this problem. And next, line 7, __gets__ function receive user input and store at char array __"overflowme"__. but __gets__ function have weak point can be receive too much amount of data rather than allocated data size. So we can input data bigger that 32 byte and more, it can be overflowed.
 
 What we can do by overflowing __"overflowme"__. For understanding this wokring, we need to know that local variable is located at stack field and how composed stack frame is.
