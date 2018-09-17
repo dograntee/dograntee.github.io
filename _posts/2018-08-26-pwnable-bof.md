@@ -75,8 +75,10 @@ Look at the bof assembly.
 <center><font size="0.5em">(Fig 5. bof.c func assembly)</font></center><br>
 
 
+In func assembly, arg_0(key) is located at ebp+8 and s(overflowme) is located at ebp-2C. So if we overflow __"overflowme"__ on 0x34 byte + 0xcafebabe, we can execute system function.
 
-
+![problem](/assets/img/pwn/bof/result.PNG "bof func assembly")
+<center><font size="0.5em">(Fig 6. result)</font></center><br>
 
 
 
