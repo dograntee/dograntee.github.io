@@ -24,7 +24,7 @@ The problem says __"Papa brought me a packed present! let's open it"__. It is a 
 ![problem](/assets/img/pwn/flag/broken.PNG "dead code")
 <center><font size="0.5em">(Fig 2. dead code)</font></center><br>
 
-But, there is some error. So IDA can't analyze the flag binary as well. First, To identify problem, i execute flag binary. 
+But, there is some error. So IDA can't analyze the flag binary as well. So, for understanding problem, i execute flag binary. 
 
 ![problem](/assets/img/pwn/flag/execute.PNG "execute binary")
 <center><font size="0.5em">(Fig 3. execute binary)</font></center><br>
