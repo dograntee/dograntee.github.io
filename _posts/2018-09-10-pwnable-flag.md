@@ -31,7 +31,7 @@ But, there is some error. So IDA can't analyze the flag binary as well. So, for 
 
 The output is __"I will malloc() and strcpy the flag there. take it."__. So i think i can find that string, and next track the string reference. But in flag binary, i can't find that string but there is some string __"//upx.sf.net$\n"__. UPX is a packing way for executable. I unpack flag binary with UPX on Ubuntu18.
 
-![problem](/assets/img/pwn/flag/string.PNG "Strings ouput")
+![problem](/assets/img/pwn/flag/idastring.PNG "Strings ouput")
 <center><font size="0.5em">(Fig 4. Strings output)</font></center><br>
 
 Then i can find __"I will malloc() and strcpy the flag there. take it."__. And i tracked the string reference and found the main function. There is assembly code using flag string. So i can find flag string 
