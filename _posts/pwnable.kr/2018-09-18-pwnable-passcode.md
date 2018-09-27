@@ -12,6 +12,15 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: pwnable.kr - passcode problem solving, it is a simple summary that i solve the passcode problem to study pwnable 
 ---
 
+#PASSCODE PROBLEM
+
+##00xIntro
+
+![problem](/assets/img/pwn/passcode/writeup.PNG "write_up")
+<center><font size="0.5em">(Fig 1. write_up)</font></center><br>
+
+
+
 ~~~c
 #include <stdio.h>
 #include <stdlib.h>
