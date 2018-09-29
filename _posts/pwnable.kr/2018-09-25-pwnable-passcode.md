@@ -67,4 +67,4 @@ int main(){
 }
 ~~~
 
-In source code, 
+In source code, there is some error. When using scanf, parameter must be address value. But 
