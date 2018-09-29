@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pwnable.kr - 5. Passcode"
-date: 2018-09-10 16:38:00
+date: 2018-09-25 16:38:00
 image: '/assets/img/pwn/passcode.png'
 description: pwnable.kr - passcode problem solving
 category: 'pwnable'
@@ -19,7 +19,7 @@ introduction: pwnable.kr - passcode problem solving, it is a simple summary that
 ![problem](/assets/img/pwn/passcode/writeup.PNG "write_up")
 <center><font size="0.5em">(Fig 1. write_up)</font></center><br>
 
-
+Look at the write-up. he say there was no compile error, but there was some warning. 
 
 ~~~c
 #include <stdio.h>
@@ -66,3 +66,5 @@ int main(){
         return 0;
 }
 ~~~
+
+In source code, 
