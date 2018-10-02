@@ -25,7 +25,7 @@ introduction: It is simple explain about SOP and POS.
 <center><font size="10em"> d(w,x,y,z) = ∑(5,6,11,15) </font></center>
 위와 같은 boolean 식을 예로 들면, 아래와 같은 table로 표현할 수 있습니다. 
 | wx/yz | 00 | 01 | 11 | 10 |
-|-------|--------|--------|--------|-------|
+|--------|---------|---------|---------|--------|
 |<center> 00 </center> |<center> 1 </center>|<center> 1 </center>|<center> 1 </center>|<center> 1 </center>|
 |<center> 01 </center> |<center> 0 </center>|<center> X </center>|<center> 1 </center>|<center> X </center>|
 |<center> 11 </center> |<center> 0 </center>|<center> 0 </center>|<center> X </center>|<center> 0 </center>|
