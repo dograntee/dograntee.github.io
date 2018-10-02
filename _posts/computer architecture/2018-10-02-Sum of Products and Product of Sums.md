@@ -31,11 +31,11 @@ introduction: It is simple explain about SOP and POS.
 | <center> 11 </center> | <center> 0 </center> | <center> 0 </center> | <center> X </center> | <center> 0 </center> |
 | <center> 10 </center> | <center> 1 </center> | <center> 0 </center> | <center> X </center> | <center> 1 </center> |
 
-|  <center>Header1</center> |  <center>Header2</center> |  <center>Header3</center> |
-|:--------|:--------:|--------:|
-|**cell 1x1** | <center>cell 1x2 </center> |*cell 1x3* |
-|**cell 2x1** | <center>cell 2x2 </center> |*cell 2x3* |
-|**cell 3x1** | <center>cell 3x2 </center> |*cell 3x3* |
+|  <center>wxyz</center> |  <center>00</center> |  <center>01</center> |  <center>11</center> |  <center>10</center> |
+|:--------|:--------:|:--------:|:--------:|:--------:|
+|**cell 1x1** | <center>cell 1x2 </center> | <center>cell 1x2 </center> | <center>cell 1x2 </center> | <center>cell 1x2 </center> |
+|**cell 2x1** | <center>cell 2x2 </center> | <center>cell 1x2 </center> | <center>cell 1x2 </center> | <center>cell 1x2 </center> |
+|**cell 3x1** | <center>cell 3x2 </center> | <center>cell 1x2 </center> | <center>cell 1x2 </center> | <center>cell 1x2 </center> |
 
  Minterm은 w'x'y'z', w'x'y'z, w'x'yz, w'x'yz', ... 총 16개/4개의 input에 따른 Combination 이며, 이들 중 참값의 합인 Sum of Products로 표현하면 아래와 같습니다.
 
