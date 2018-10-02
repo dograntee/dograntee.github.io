@@ -21,23 +21,23 @@ introduction: It is simple explain about SOP and POS.
  Sum of Products를 잘 이해하기 위해서는 Minterm이라는 개념을 먼저 짚고 넘어가야 합니다. Mindterm 이란 input에 따른 각 AND Combination 을 의미합니다.
 
 #### Example
-<center><font size="1em"> F(w,x,y,z) = ∑(0,1,2,3,7,8,10) </font></center>
-<center><font size="1em"> d(w,x,y,z) = ∑(5,6,11,15) </font></center>
+<center><font size="10em"> F(w,x,y,z) = ∑(0,1,2,3,7,8,10) </font></center>
+<center><font size="10em"> d(w,x,y,z) = ∑(5,6,11,15) </font></center>
 위와 같은 boolean 식을 예로 들면, 아래와 같은 table로 표현할 수 있습니다. 
 | wx/yz | 00 | 01 | 11 | 10 |
-|----|----|----|----|----|
-|<center> 0 </center> |<center> 1 </center> |<center> 1 </center> |<center> 1 </center> |<center> 1 </center> |
-|<center> 01 </center> |<center> 0 </center>|<center> X </center>|<center> 1 </center> |<center> X </center> |
+|-------|--------|--------|--------|-------|
+|<center> 00 </center> |<center> 1 </center>|<center> 1 </center>|<center> 1 </center>|<center> 1 </center>|
+|<center> 01 </center> |<center> 0 </center>|<center> X </center>|<center> 1 </center>|<center> X </center>|
 |<center> 11 </center> |<center> 0 </center>|<center> 0 </center>|<center> X </center>|<center> 0 </center>|
 |<center> 10 </center> |<center> 1 </center>|<center> 0 </center>|<center> X </center>|<center> 1 </center>|
 
  Minterm은 w'x'y'z', w'x'y'z, w'x'yz, w'x'yz', ... 총 16개/4개의 input에 따른 Combination 이며, 이들 중 참값의 합인 Sum of Products로 표현하면 아래와 같습니다.
 
-<center><font size="1em"> F =  w'x'y'z' + w'x'y'z + w'x'yz + w'x'yz' + w'xyz + wx'y'z' + wx'yz' </font></center>
+<center><font size="10em"> F =  w'x'y'z' + w'x'y'z + w'x'yz + w'x'yz' + w'xyz + wx'y'z' + wx'yz' </font></center>
 
 이를 간소화시켜 나타내면, 아래와 같습니다.
 
-<center><font size="1em"> F =  x'z'(w'y' + w'y + wy' + wy) + w'z(x'y' + x'y + xy' + xy) </br>
+<center><font size="10em"> F =  x'z'(w'y' + w'y + wy' + wy) + w'z(x'y' + x'y + xy' + xy) </br>
  = x'z' + w'z</br></font></center>
 
  ### Product of Sums
