@@ -13,7 +13,7 @@ twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 introduction: It is simple explain about SOP and POS.
 ---
 
-### Sum of Products
+### 0x01 Sum of Products
  Sum of Products 표현은 Boolead algerbra 표현 방식에서 서로 다른 곱셈 input 들의 합으로 표현합니다(e.g. F = A'B'C + A'B + AB'C). 여기서 곱셉은 일반적으로 수학의 곱셈이 아닌 논리 AND 연산을 의미하며, 덧셈은 논리 OR 연산을 의미합니다.
 
  #### Minterm
@@ -31,6 +31,12 @@ introduction: It is simple explain about SOP and POS.
 |<center> 11 </center> |<center> 0 </center>|<center> 0 </center>|<center> X </center>|<center> 0 </center>|
 |<center> 10 </center> |<center> 1 </center>|<center> 0 </center>|<center> X </center>|<center> 1 </center>|
 
+|  <center>Header1</center> |  <center>Header2</center> |  <center>Header3</center> |
+|:--------|:--------:|--------:|
+|**cell 1x1** | <center>cell 1x2 </center> |*cell 1x3* |
+|**cell 2x1** | <center>cell 2x2 </center> |*cell 2x3* |
+|**cell 3x1** | <center>cell 3x2 </center> |*cell 3x3* |
+
  Minterm은 w'x'y'z', w'x'y'z, w'x'yz, w'x'yz', ... 총 16개/4개의 input에 따른 Combination 이며, 이들 중 참값의 합인 Sum of Products로 표현하면 아래와 같습니다.
 
 <center><font size="10em"> F =  w'x'y'z' + w'x'y'z + w'x'yz + w'x'yz' + w'xyz + wx'y'z' + wx'yz' </font></center>
@@ -40,7 +46,7 @@ introduction: It is simple explain about SOP and POS.
 <center><font size="10em"> F =  x'z'(w'y' + w'y + wy' + wy) + w'z(x'y' + x'y + xy' + xy) </br>
  = x'z' + w'z</br></font></center>
 
- ### Product of Sums
+ ### 0x02 Product of Sums
   Product of Sums 표현은 Boolean algebra 표현 방식에서 서로 다른 합 input 들의 곱셈으로 표현합니다(e.g. F = (B+C)(A'+B'+C)(A'+B'+C')). 여기서 곱셈과 덧셈은 각각 논리연산 AND와 OR을 의미합니다.
 
   #### Maxterm
