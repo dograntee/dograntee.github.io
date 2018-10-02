@@ -67,12 +67,16 @@ d(w,x,y,z) = ∑(5,6,11,15)
 |**11** | <center>0 </center> | <center>0 </center> | <center>x </center> | <center>0 </center> |
 |**10** | <center>1 </center> | <center>0 </center> | <center>x </center> | <center>1 </center> |
 
-이 중에 Maxterm 16개 중 false값을 가지는 or combination((w'xy'z'), (wxy'z'), (wxy'z), (wx'y'z),(wx'yz'))을 추출합니다.
+이 중에 Maxterm 16개 중 false값을 가지는 or combination((w'xy'z'), (wxy'z'), (wxy'z), (wx'y'z),(wx'yz'))을 추출합니다. 이를 카르노맵을 이용하여 축약하면 아래와 같습니다.
 ~~~
-F' = (w'xy'z')+(wxy'z')+(wxy'z)+(wx'y'z)+(wx'yz')
-   = 
+F' = xz' + wz
 ~~~
-
+이를 다시 F 로 바꾸기 위해 드모르간의 법칙을 사용하면 Products of Sum 은 아래와 같습니다.
+~~~
+(F')' = (xz' + wz)'
+F     = (xz')'(wz)'
+      = (x'+z)(w'+z')
+~~~
 
 
 ### Reference
