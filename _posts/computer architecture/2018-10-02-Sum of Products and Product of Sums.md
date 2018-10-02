@@ -34,7 +34,7 @@ d(w,x,y,z) = ∑(5,6,11,15)
 |**11** | <center>0 </center> | <center>0 </center> | <center>x </center> | <center>0 </center> |
 |**10** | <center>1 </center> | <center>0 </center> | <center>x </center> | <center>1 </center> |
 
- Minterm은 w'x'y'z', w'x'y'z, w'x'yz, w'x'yz', ... 총 16개/4개의 input에 따른 Combination 이며, 이들 중 참값의 합인 Sum of Products로 표현하면 아래와 같습니다.
+ Minterm은 w'x'y'z', w'x'y'z, w'x'yz, w'x'yz', ... 총 16개(4개의 input에 따른 Combination)이며, 이들 중 참값의 합인 Sum of Products로 표현하면 아래와 같습니다.
 
 ~~~
  F =  w'x'y'z' + w'x'y'z + w'x'yz + w'x'yz' + w'xyz + wx'y'z' + wx'yz'
@@ -71,7 +71,7 @@ d(w,x,y,z) = ∑(5,6,11,15)
 ~~~
 F' = xz' + wz
 ~~~
-이를 다시 F 로 바꾸기 위해 드모르간의 법칙을 사용하면 Products of Sum 은 아래와 같습니다.
+이를 다시 F 로 바꾸기 위해 드모르간의 법칙을 사용하면 Product of Sums 은 아래와 같습니다.
 ~~~
 (F')' = (xz' + wz)'
 F     = (xz')'(wz)'
