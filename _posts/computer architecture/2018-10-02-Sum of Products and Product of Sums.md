@@ -16,7 +16,7 @@ introduction: It is simple explain about SOP and POS.
 ### 0x01 Sum of Products
  Sum of Products 표현은 Boolead algerbra 표현 방식에서 서로 다른 곱셈 input 들의 합으로 표현합니다(e.g. F = A'B'C + A'B + AB'C). 여기서 곱셉은 일반적으로 수학의 곱셈이 아닌 논리 AND 연산을 의미하며, 덧셈은 논리 OR 연산을 의미합니다.
 
- #### Minterm
+#### Minterm
 
  Sum of Products를 잘 이해하기 위해서는 Minterm이라는 개념을 먼저 짚고 넘어가야 합니다. Mindterm 이란 input에 따른 각 AND Combination 을 의미합니다.
 
@@ -43,17 +43,17 @@ d(w,x,y,z) = ∑(5,6,11,15)
 이를 간소화시켜 나타내면, 아래와 같습니다.
 
 ~~~
-F =  x'z'(w'y' + w'y + wy' + wy) + w'z(x'y' + x'y + xy' + xy)
+F = x'z'(w'y' + w'y + wy' + wy) + w'z(x'y' + x'y + xy' + xy)
   = x'z' + w'z
 ~~~
 
- ### 0x02 Product of Sums
+### 0x02 Product of Sums
   Product of Sums 표현은 Boolean algebra 표현 방식에서 서로 다른 합 input 들의 곱셈으로 표현합니다(e.g. F = (B+C)(A'+B'+C)(A'+B'+C')). 여기서 곱셈과 덧셈은 각각 논리연산 AND와 OR을 의미합니다.
 
 #### Maxterm
  Maxterm이란, input값들에 대한 OR Combination을 의미합니다.
 
- #### Example
+#### Example
 ~~~c
 F(w,x,y,z) = ∑(0,1,2,3,7,8,10)
 d(w,x,y,z) = ∑(5,6,11,15) 
