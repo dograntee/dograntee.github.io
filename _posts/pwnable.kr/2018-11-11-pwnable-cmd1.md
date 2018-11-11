@@ -48,3 +48,5 @@ When we pass "cat *" as argument to cmd1, "/thankyouverymuch/cat *" is really do
 
 ![problem](/assets/img/pwn/cmd1/startup.PNG "result")
 <center><font size="0.5em">(Fig 2. Result)</font></center><br>
+
+mommy now I get what PATH environment is for :)
