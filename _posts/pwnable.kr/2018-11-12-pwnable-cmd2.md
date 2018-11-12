@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Pwnable.kr - 10. shellshock"
-date: 2018-11-11 22:21:00
+title: "Pwnable.kr - 15. cmd2"
+date: 2018-11-12 19:21:00
 image: '/assets/img/pwn/cmd2.png'
 description: pwnable.kr - cmd2 problem solving
 category: 'pwnable'
