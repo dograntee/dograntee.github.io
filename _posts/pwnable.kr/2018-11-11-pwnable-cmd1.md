@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Pwnable.kr - 10. shellshock"
-date: 2018-09-30 21:11:00
+date: 2018-11-11 22:21:00
 image: '/assets/img/pwn/cmd1.png'
-description: pwnable.kr - shellshock problem solving
+description: pwnable.kr - cmd1 problem solving
 category: 'pwnable'
 tags:
 - pwnable
@@ -46,7 +46,7 @@ Because, There is other trick about environment variable. Look at the "putenv". 
 When we pass "cat *" as argument to cmd1, "/thankyouverymuch/cat *" is really done. So we need to pass absoulte address path.
 
 
-![problem](/assets/img/pwn/cmd1/startup.PNG "result")
+![problem](/assets/img/pwn/cmd1/result.PNG "result")
 <center><font size="0.5em">(Fig 2. Result)</font></center><br>
 
 mommy now I get what PATH environment is for :)
