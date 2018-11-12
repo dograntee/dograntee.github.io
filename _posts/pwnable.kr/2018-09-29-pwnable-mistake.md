@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pwnable.kr - 9. mistake"
-date: 2018-09-25 16:38:00
+date: 2018-09-29 20:38:00
 image: '/assets/img/pwn/mistake.png'
 description: pwnable.kr - mistake problem solving
 category: 'pwnable'

@@ -3,7 +3,7 @@ layout: post
 title: "Sum of Products and Product of Sums"
 date: 2018-10-02 17:46:00
 image: '/assets/img/computer_archi\Sum of Products and Product of Sums.PNG'
-description: pwnable.kr - fd problem solving
+description: It is simple explain about SOP and POS.
 category: 'computer architecture'
 tags:
 - computer architecture
