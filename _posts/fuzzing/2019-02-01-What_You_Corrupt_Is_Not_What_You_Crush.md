@@ -2,13 +2,14 @@
 layout: post
 title: "What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices"
 date: 2019-02-01 16:38:00
-image: '/assets/img/pwn/flag.png'
-description: pwnable.kr - flag problem solving
+image: '/assets/img/fuzzing/whatis/intro.png'
+description: Embedded device fuzzing
 category: 'fuzzing'
 tags:
 - fuzzing
 - paper review
 twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+<<<<<<< HEAD
 introduction: A summary of my study
 ---
 
@@ -25,3 +26,9 @@ Type-3 : 운영체제와 어플리케이션 간의 구분 없이 하나로 구�
 #실험 방법
 
 각 
+=======
+introduction: A summary of what i studied
+---
+
+
+>>>>>>> 7d853fb1cdfef95f11be35f3cffdbe5e3baa3594
