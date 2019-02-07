@@ -9,7 +9,6 @@ tags:
 - fuzzing
 - paper review
 twitter_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-<<<<<<< HEAD
 introduction: A summary of my study
 ---
 
@@ -26,9 +25,3 @@ Type-3 : 운영체제와 어플리케이션 간의 구분 없이 하나로 구�
 #실험 방법
 
 각 
-=======
-introduction: A summary of what i studied
----
-
-
->>>>>>> 7d853fb1cdfef95f11be35f3cffdbe5e3baa3594
