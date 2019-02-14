@@ -48,3 +48,7 @@ introduction: A summary of my study
 <center><font size="0.5em">(Fig 1. Experiment Result)</font></center><br>
 
 
+## 03x사용한 휴리스틱
+
+![problem](/assets/img/fuzzing/whatis/fig2.PNG "Heuristic")
+<center><font size="0.5em">(Fig 2. Heuristic Result)</font></center><br>
