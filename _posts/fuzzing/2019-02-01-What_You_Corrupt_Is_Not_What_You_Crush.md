@@ -44,7 +44,7 @@ introduction: A summary of my study
 **Type-3** : 운영체제와 어플리케이션 간의 구분 없이 하나로 구성된 펌웨어 이미지를 가진 임베디드 장치. (해당 실험에서는 개발보드에 테스트 코드를 삽입하여 사용) 
 
 디바이스를 위 3 Type으로 나누어 비교 실험 진행, 메모리 누수를 유발하기 위한 코드를 삽입하여 동작.
+![problem](/assets/img/fuzzing/whatis/fig1.PNG "Radiology")
+<center><font size="0.5em">(Fig 1. Experiment Result)</font></center><br>
 
-## 03x실험 방법
 
-각 
