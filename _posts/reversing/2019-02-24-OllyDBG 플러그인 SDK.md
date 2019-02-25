@@ -311,3 +311,92 @@ Readmemory로 메모리 영역을 읽어오고 다시 Disasm에 src로 넘겨주
  - jmpaddr : 402e25
    다른 메모리 번지 이동이 있을 경우 출력.
 
+~~~c
+
+void copyInstructions(void *item)
+{
+  t_dump		*pd;
+  t_memory		*pmem;
+  t_bookmark	mark, *pb, *pb2;
+  t_disasm		da;
+
+
+  unsigned int	line=0,pocetBytup=0,NumberOfInstructions=0,i,j;
+  ulong			cmdsize;
+  char			cmd[MAXCMDSIZE],*pdecode;
+  ulong			decodesize;
+
+	line=0;
+	pd=(t_dump *)item;
+	pocetBytu=0;
+	NumberOfInstructions=0;
+
+	cmdsize=MAXCMDSIZE;
+	// clear the bookamrk
+	//Deletesorteddatarange(&(bookmark.data),0,0xFFFFFFFF);
+
+	startC=pd->sel0;
+	endC=pd->sel1;
+
+	while(pd->sel1>(pd->sel0+pocetBytu)){
+		NumberOfInstructions++;
+		Readmemory(cmd,pd->sel0+pocetBytu,cmdsize,MM_RESTORE|MM_SILENT);
+		pmem=Findmemory(pd->sel0+pocetBytu);
+		pdecode=Finddecode(pd->sel0+pocetBytu,&decodesize);
+		pocetBytu+=Disasm(cmd,cmdsize,(pd->sel0)+pocetBytu,pdecode,&da,DISASM_SIZE,0);
+	}
+	
+	if (Createsorteddata(&(bookmark.data),"ExtraCopy",
+	sizeof(t_bookmark),NumberOfInstructions,NULL,NULL)!=0)	
+	{	
+		MessageBox(hwmain,"Unable to allocate memory for the block","Info",MB_OK);
+		return ;                         // Unable to allocate bookmark data
+	}
+	pocetBytu=0;
+	for (i=0;i<NumberOfInstructions;i++){
+		Readmemory(cmd,pd->sel0+pocetBytu,cmdsize,MM_RESTORE|MM_SILENT);
+		pmem=Findmemory(pd->sel0+pocetBytu);
+		pdecode=Finddecode(pd->sel0+pocetBytu,&decodesize);
+		
+		pocetBytup=pocetBytu;
+		pocetBytu+=Disasm(cmd,cmdsize,(pd->sel0)+pocetBytu,pdecode,&da,DISASM_CODE,0);
+
+
+		mark.index=line;
+		mark.size=1;
+		mark.type=0;
+		mark.addr=pd->sel0+pocetBytup;
+		mark.length=pocetBytu-pocetBytup;
+		strcpy(mark.code,da.dump);
+		strcpy(mark.ASM,da.result);		
+		mark.JumpTo=da.jmpaddr;
+		//set Jump To
+		Addsorteddata(&(bookmark.data),&mark);
+		if (bookmark.hw!=NULL) InvalidateRect(bookmark.hw,NULL,FALSE);
+			line++;
+	} //end while	
+	
+	NumberL=NumberOfInstructions;
+	
+	for(i=0;i<NumberL;i++){
+		pb=(t_bookmark *)Findsorteddata(&(bookmark.data),i);
+		pb->shift=0;
+		pb->newSize=0;
+		Findname(pb->addr,NM_COMMENT,pb->Comment);	
+
+		if (pb!=NULL){
+			if ((pb->JumpTo>=startC) && (pb->JumpTo<endC)){
+				for(j=0;j<NumberL;j++){
+					pb2=(t_bookmark *)Findsorteddata(&(bookmark.data),j);
+					if (pb->JumpTo==pb2->addr){
+						pb->JmpToIndex=j;
+						break;
+					}
+				}
+			}
+			else pb->JmpToIndex=-1;
+		}
+	}
+}
+
+~~~
